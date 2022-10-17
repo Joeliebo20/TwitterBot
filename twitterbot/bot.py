@@ -54,7 +54,7 @@ def tweet(client):
         print("tweeted")
     except Exception as err:
         print("already tweeted this!")
-    time.sleep(10)
+    time.sleep(60)
     
 
 def main():

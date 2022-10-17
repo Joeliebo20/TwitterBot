@@ -1,7 +1,7 @@
-bearer = "AAAAAAAAAAAAAAAAAAAAAMiOiAEAAAAAwKGVFoOF5Tda3OYNrZxKFFfax0w%3D9Y1Pas6Sjpa8ETzLGixdgK5EjCkh2QanezIQAQwJuS2DaY3Kp1"
-api_key_secret = 'rEpq547TErRVV2Ts31l950DqVe5T3TuxwS40a4F5JQOlsSVVUG'
-api_key = '3AW1bmIJLJ0TbGJvB0QCya6HO'
-access_token = '1252804010333081600-pmqBX9LQK8wgoIVjcHRjgLytIWrY0B'
-access_token_secret = 'BmGkvXUuY7oNDmhYxNNVuMM5tcuuZbipg8vVK8DYC03tf'
-client_id = 'ZElhNHVJSmVkVTdxeHlOVnZiRW06MTpjaQ'
-client_id_secret = '4kzWuvMv4VhCFNvQW1awdHBhbHMJ6KE4-sFDnAsyq2bdG-XKQ3'
+bearer = "AAAAAAAAAAAAAAAAAAAAAAkliQEAAAAAzbS8h31kjLBgn6B8FLgQAhfK%2BZ4%3Dp9p0li8T3AMYI0vHDuXERJl8z5FmPx2IQfN7sx1298q7Lofsbl"
+api_key_secret = 'MkQBy1qHEqHDRpcmMvDHsSEDurLVeFs6NRBGtLMQ7fcFaqHvEU'
+api_key = '55W8H0L4imgKXM5uCQTkzTNUk'
+access_token = '1582110419296075785-0JB1npuCqmf2po36x5IYvZCdXbe1zI'
+access_token_secret = '5taT8nbqD3jB6d6n8l3sJZ5x7o8Vce8KwGA2IzjvaUAd2'
+client_id = 'cUhTQkFKM3ZHZm1hWVNKX2Zpb286MTpjaQ'
+client_id_secret = 'ZvKWChzcRa3UtwAgc4VRah_Gt7Eem6lvhbPsf-TXQeUiQjzNVM'

@@ -1,0 +1,7 @@
+bearer = "AAAAAAAAAAAAAAAAAAAAAMiOiAEAAAAAwKGVFoOF5Tda3OYNrZxKFFfax0w%3D9Y1Pas6Sjpa8ETzLGixdgK5EjCkh2QanezIQAQwJuS2DaY3Kp1"
+api_key_secret = 'rEpq547TErRVV2Ts31l950DqVe5T3TuxwS40a4F5JQOlsSVVUG'
+api_key = '3AW1bmIJLJ0TbGJvB0QCya6HO'
+access_token = '1252804010333081600-pmqBX9LQK8wgoIVjcHRjgLytIWrY0B'
+access_token_secret = 'BmGkvXUuY7oNDmhYxNNVuMM5tcuuZbipg8vVK8DYC03tf'
+client_id = 'ZElhNHVJSmVkVTdxeHlOVnZiRW06MTpjaQ'
+client_id_secret = '4kzWuvMv4VhCFNvQW1awdHBhbHMJ6KE4-sFDnAsyq2bdG-XKQ3'

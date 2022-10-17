@@ -60,7 +60,7 @@ def tweet(client):
         print(f"tweeted '{tweet}'")
     except Exception as err:
         print("already tweeted this!")
-    time.sleep(60)
+    time.sleep(86400)
     
 
 def main():

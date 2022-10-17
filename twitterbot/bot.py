@@ -29,20 +29,26 @@ tweet_list = ['What up world', f'{list_of_ppl[list_rand]} wants to rediscover gr
     'Cookie dough is the best flavor', 'Bereal is an app', 'Chocolate milk', 'Nesquick is trash', 'NASA just found out about space', 'How am I coming up with all of these topics', f'{list_of_ppl[list_rand2]}', f'Just saw {list_of_ppl[list_rand2]} eating pigs in a blanket', 'Does anyone actually enjoy wearing jeans?', 
     f'Hit singer/songwriter {list_of_ppl[list_rand2]} was caught drinking Pepsi Zero', 'Nathaniel Hackett is the worst coach in the NFL', 'Bob Costas is the perfect announcer to listen to if you want to go to sleep', 'Carrots and Broccoli > most vegetables', 'Opinonated tweet', 'Non-opinonated tweet', 'I remember the first time I cut onions', 
     'cheesburger not in paradise', 'strawberry banana smoothie','The opposite of opposite is positive', 'benevolent is an awesome word and should be used more', 'racecar is racecar backwards', 'average twitter bot tweet', 'I like mine with lettuce and tomato', 'Mmmmm im hungry give me tide pods', 'The fantasy football waiver wire this week is looking scarce', 
-    'Please help me with my essay', 'LinkedIn']
+    'Please help me with my essay', 'LinkedIn', 'I refuse to believe the world has become a place where one cannot "skip class".', 'Seriously? 9 + 10 is not 21', 'AYYYYY MACARENA', 'This is literally a twitter bot', 'Fabian Moreau is better than your favorite corner', 'Google it', 'Amazonian Jungle or Amazon the company', 'This is not an advertisement for jelly beans', 
+    'Steve Harvey the type of dude to believe in Manifest Destiny', 'Napolean Bonaparte was such a bottom tier IRL villain', 'We are going on a trip in our favorite rocket ship', 'I am going to make salmon for dinner tonight', 'Better Call Saul', 'Henny Cans are a good beer', 'Vodka or Lemonade? - Russian guy, probably', 'Scrabble is an ELITE board game', 'Beans suck so bad',
+    'Alexander Graham Bell did not invent anything of importance', 'Canadiens are pretty cool', 'Hockey is a good sport I will not lie', 'Why do I speak in the first person if I am literally a bot', 'Gmail is the king of emails', 'Androids suck', 'Controversial Opinion', 'Literally what is the point of Non-alcoholic beer', 'Put the quarter in the Aldis shopping cart', 'Hard or soft pillows',
+    'Charging stations are just gas stations for irregular cars', 'https://somewebsite.com', 'Ninjas are something that I thought would be wayyy more prominent in my life', 'Miller Lite underrated (I am literally a robot)', 'Beer ball?', 'Racketball is fake tennis', 'Uno reverse card', f'{list_of_ppl[list_rand]} seems like a great chess player']
 
 
 
 def setup():
-   clnt = tw.Client(bearer, api_key, api_key_secret, access_token, access_token_secret)
-   api = tw.API(clnt)
-   return clnt
+    # sets up the twitter client
+    clnt = tw.Client(bearer, api_key, api_key_secret, access_token, access_token_secret)
+    api = tw.API(clnt)
+    return clnt
 
 def generate_tweet():
+    # this function generates tweets randomly based on the names and actions provided above
     tweet = list_of_ppl[list_rand] + " " + actions[action_rand]
     return tweet
 
-def tweet(client):
+def tweet(client): 
+    # this function created a random tweet and tweets it out.
     rand = random.randint(0, len(tweet_list)-1)
     rand2 = random.randint(0, 1)
     if rand2 == 0:
@@ -51,7 +57,7 @@ def tweet(client):
         tweet = generate_tweet()
     try:
         client.create_tweet(text=tweet)
-        print("tweeted")
+        print(f"tweeted '{tweet}'")
     except Exception as err:
         print("already tweeted this!")
     time.sleep(60)
@@ -61,12 +67,9 @@ def main():
     client = setup()
     while True:
         time = datetime.now()
-        mins = time.minute
-        if mins % 5 == 0:
+        day = time.day
+        if day % 5 == 0:
+            # tweets every 5 days
             tweet(client)
-
-    
-    
-    
 
 main()

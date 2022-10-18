@@ -12,7 +12,8 @@ list_of_ppl = ['Drake', 'Travis Scott', 'Scarlett Johansen', 'Iron Man', 'Guy Fi
     'Michael Jordan', 'Fidel Castro', 'Pablo Picasso', 'Leonardo DiCaprio', 'Amelia Earhart', 'Michael Jackson', 'Cleopatra', 'Roger Federer', 'Sam from ICarly', 'Tiger Woods', 'Margaret Thatcher', 'George Clooney', 'Rick Sanchez', 'Beyonce', 'Tom Hanks', 'Ellen DeGeneres', 'George W. Bush',
     'Morgan Freeman', 'Sandra Bullock', 'Elton John', 'Snoop Dogg', 'Taylor Swift', 'Will Ferrell', 'Kanye West', 'Will Smith', 'Justin Bieber', 'Mariah Carey', 'Jimmy Fallon', 'Brad Pitt', 'Denzel Washington', 'Sylvester Stallone', 'Dwayne Johnson', 'Samuel L. Jackson', 'Jackie Chan', 'Jamie Foxx', 
     'Mick Jagger', 'Ice Cube', 'Lebron James', 'Kevin Durant', 'Steph Curry', 'Daniel Jones', 'New York Giants Wide Receiver Kenny Golladay', 'Lionel Ritchie', 'Ryan Lieberman', 'Kareem Abdul-Jabbar', 'Mike Wazowski', 'Marilyn Monroe', 'Kevin Hart', 'Alexander the Great', 'Spongebob Squarepants', 'Patrick Star', 
-    'James Bond', 'Simon Cowell', 'Howie Mandell', 'Aaron Rodgers']
+    'James Bond', 'Simon Cowell', 'Howie Mandell', 'Aaron Rodgers', 'Rapper Lil Baby', 'Gordon Ramsey', 'Baseball Player Mike Trout', 'NBA Superstar Luka Doncic', 'Giannis Antetokounmpo', 'Tall Guy Yao Ming', 'Robotics Professor', 'Zach from Zach and Cody', 'J. Cole', 'Kendrick Lamar', 'Upcoming Rapper Eminem',
+    'World Chess Champion Magnus Carlsen', 'Superman', 'Batman', 'Ryan Reynolds', 'New York Knicks Star Player RJ Barrett', 'Scientific Genius Galileo Galilei', 'Copernicus', 'Greek Philosopher Plato', 'Legendary Philosopher and Singer/Songwriter Confucious', 'Dale Earnheardt Jr.', 'Dave Portnoy', 'Charli Damelio']
 
 list_rand = random.randint(0, len(list_of_ppl) - 1)
 list_rand2 = random.randint(0, len(list_of_ppl) - 1)
@@ -20,7 +21,8 @@ list_rand2 = random.randint(0, len(list_of_ppl) - 1)
 actions = ['watched the baseball game', 'is currently eating ice cream', f'would beat up {list_of_ppl[list_rand2]}', 'walked to the park today', 'attempted to destroy the world today', 'sang a terrible song early this afternoon', 'was casted to play the main character in the brand new hit movie The Emoji Movie 2', 'hates IPhones', 
     'has decided to become the new Queen of England', 'played Tennis and failed miserably', 'went to the moon', 'stole the Mona Lisa', 'aproves this message', 'once played flute', 'watched the new House of Dragon episode and said quote "a 10/10"', 'now owns the New York Yankees', f'hired Saul Goodman as their lawyer in a trial against {list_of_ppl[list_rand2]}', 
     f'fought bravely against opposing commander {list_of_ppl[list_rand2]} at the battle of London', 'sang the Gettysburg Address at their talent show', 'once said "Alcohol! Because no great story started with someone eating a salad."', 'wants to be me so bad', 'has been hired to play Peter Griffin in Family Guy 2', 'parted the Red Sea', 'knows how to do stuff', 
-    f'is actually blood-related to {list_of_ppl[list_rand2]}', 'once put a pair of sunglasses on a pineapple', ': destroyer of worlds', 'just bought the NBA and is now its rightful owner']    
+    f'is actually blood-related to {list_of_ppl[list_rand2]}', 'once put a pair of sunglasses on a pineapple', ': destroyer of worlds', 'just bought the NBA and is now its rightful owner', 'wants to buy a Jimmy Johns', 'earned extra credit in class by presenting first', 'ate leaves from a tree when they were a child', 'ate shellfish and cried', 
+    'is the greatest trumpet player on planet Earth', 'swung and missed', 'thought they did something of importance today', 'tweeted out "roses are red, violets are blue"', 'won a track race when they were 7', 'is currently listening to Starships by Nicki Minaj', 'went to the mall', 'traveled back in time', f'lost in a staring contest to {list_of_ppl[list_rand]}']    
 action_rand = random.randint(0, len(actions) - 1)
 
 tweet_list = ['What up world', f'{list_of_ppl[list_rand]} wants to rediscover gravity', 'Does anyone know how to make a grilled cheese sandwich','Tweeting', 'Drake is much better than Travis Scott', 'Travis Scott is much better than Drake', 'Go outside', 'Do you prefer hamburger or cheeseburger', ':)', ':(', 
@@ -68,8 +70,8 @@ def main():
     while True:
         time = datetime.now()
         day = time.day
-        if day % 5 == 0:
-            # tweets every 5 days
+        if day % 1 == 0:
+            # tweets every day
             tweet(client)
 
 main()
